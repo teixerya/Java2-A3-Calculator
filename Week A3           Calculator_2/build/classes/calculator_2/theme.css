@@ -1,0 +1,15 @@
+
+/*
+ * A css stylesheet used to color the calculator background black and 
+set the "C" button orange.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:black;
+}
+
+.cDisplay{
+
+    -fx-color:orange;
+}
+

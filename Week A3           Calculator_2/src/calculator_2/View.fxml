@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox spacing="10" alignment="CENTER" prefWidth="300.0" prefHeight="400.0" 
+      styleClass="mainFxmlClass" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="calculator_2.Controller">
+    
+    <fx:define>
+        <Font fx:id="FONT" size="18"/>
+    </fx:define>
+    
+    <StackPane alignment="CENTER">
+        <Rectangle fill="WHITE" stroke="GRAY" width="230" height="50"/>
+        <Text fx:id="output" font="$FONT"  /> 
+    </StackPane> 
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="7" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="8" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="9" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="/" prefWidth="50" font="$FONT" onAction="#eventOperator"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="4" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="5" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="6" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="*" prefWidth="50" font="$FONT" onAction="#eventOperator"/>
+    </HBox>        
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="1" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="2" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="3" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="-" prefWidth="50" font="$FONT" onAction="#eventOperator"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="0" prefWidth="50" font="$FONT" onAction="#eventNumpad"/>
+        <Button text="." prefWidth="110" font="$FONT" onAction="#eventNumpad"/>
+        
+
+        <Button text="+" prefWidth="50" font="$FONT" onAction="#eventOperator"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="C" prefWidth="110" font="$FONT" onAction="#eventC"
+                        styleClass="cDisplay"/>
+        
+        <Button text="=" prefWidth="110" font="$FONT" onAction="#eventOperator"/>
+        
+    </HBox>
+
+    
+</VBox>
